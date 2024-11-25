@@ -25,29 +25,70 @@ let myDay =  myDate.getDay();
 let today = "";
 let coffee = "";
 
+//use location object to access querystring (address bar)
+const queryString = window.location.search;
+    
+//output to console    
+console.log(queryString);
+    
+//separate query string parameters
+const urlParams = new URLSearchParams(queryString);
+
+if(urlParams.has("day")){//from querystring
+	myDay = urlParams.get("day");
+ }
+myDay = parseInt(myDay);//must change to integer for switch
+
 switch(myDay){
 	
 	case 0:
+
 		today = "Sunday";
-		coffee = {};
-		alt 
-		color 
-		pic
-		desc 
 
+		coffee = {  
+			name: "Frapuccino", 
+			day: "Sunday",
+			alt: "A pic of a Frapuccino", 
+			color: "beige", 
+			pic: "images/frappaccino.jpg", 
+			desc: `Cold & Sweet`
 
+		};
+		
 	break;
 
 	case 1:
 		today = "Monday";
+
+		coffee = {  
+			name: "Cold Brew", 
+			day: "Monday",
+			alt: "A pic of a Cold Brew", 
+			color: "#493014", 
+			pic: "images/cold-brew.jpg", 
+			desc: `to get the extra energy!`
+			
+		};
 	break;
 	
 	case 2:
 		today = "Tuesday";
+
+		coffee = {  
+			name: "Drip Coffee", 
+			day: "Tuesday",
+			alt: "A pic of Drip coffee", 
+			color: "#5d473a", 
+			pic: "images/drip.jpg", 
+			desc: `for dark coffee lovers.`
+
+		};
 	break;
 
 	case 3:
 		today = "Wednesday";
+
+
 		coffee = {  
 			name: "Bubble Tea", 
 			day: "Wednesday",
@@ -61,24 +102,56 @@ switch(myDay){
 
 	case 4:
 		today = "Thursday";
+
+		coffee = {  
+			name: "Caramel-latte", 
+			day: "Thursday",
+			alt: "A pic of a Caramel Latte", 
+			color: "#d3a54f", 
+			pic: "images/caramel-latte.jpg", 
+			desc: `you can't go wrong with caramel.`
+
+		};
 	break;
 
 	case 5:
 		today = "Friday";
+
+
+		coffee = {  
+			name: "Mocha", 
+			day: "Friday",
+			alt: "A pic of a Mocha", 
+			color: "#9c917a", 
+			pic: "images/mocha.jpg", 
+			desc: `chocolate to spice life up`
+
+		};
 	break;
 
 	case 6:
 		today = "Saturday";
+
+		coffee = {  
+			name: "Pumpkin Spice", 
+			day: "Monday",
+			alt: "A pic of a Pumpkin Spice Latte", 
+			color: "orangebrown", 
+			pic: "images/pumpkin-spice-latte.jpg", 
+			desc: `One of our best sellers`
+
+		};
 	break;
 
 	default:
 		today = "Something went wrong";
 }
 
-alert(today);
+//alert(today);
 console.log(coffee);
 
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
+document.querySelector("html").style.backgroundColor = coffee.color;
 
 function coffeeTemplate(coffee){
 	let myReturn = `<img src="${coffee.pic}" alt="${coffee.alt}" id="coffee" />
