@@ -49,7 +49,7 @@ switch(myDay){
 			name: "Frappuccino", 
 			day: "Sunday",
 			alt: "A pic of a Frappuccino", 
-			color: "beige", 
+			color: "#ad9d88", 
 			pic: "images/frapuccino.jpg", 
 			desc: `Indulge in the ultimate coffee treat with our creamy, dreamy Frappuccino. Blended to perfection, this icy delight combines rich espresso, velvety milk, and your choice of decadent flavors, all crowned with a swirl of whipped cream and a drizzle of pure bliss. Whether you're craving classic mocha, caramel's golden sweetness, or a seasonal twist, our Frappuccino is the perfect pick-me-up for any time of day. Cool, refreshing, and irresistibly indulgent—it’s more than just coffee; it’s an experience.`
 
@@ -64,7 +64,7 @@ switch(myDay){
 			name: "Cold Brew", 
 			day: "Monday",
 			alt: "A pic of a Cold Brew", 
-			color: "#493014", 
+			color: "#ffffff", 
 			pic: "images/cold-brew.jpg", 
 			desc: `Experience coffee at its most refreshing with our expertly crafted Cold Brew. Slowly steeped in cool water for over 12 hours, this rich, velvety drink delivers a bold coffee flavor with naturally low acidity and a smooth finish. Perfectly chilled and irresistibly smooth, our Cold Brew is a refreshing pick-me-up, whether enjoyed black or paired with creamy milk and sweet syrups. Sip it on a hot day or savor it as an all-day energizer—it's coffee, redefined.`
 			
@@ -78,7 +78,7 @@ switch(myDay){
 			name: "Cappucino", 
 			day: "Tuesday",
 			alt: "A pic of a Cappucino", 
-			color: "#5d473a", 
+			color: "#f3f1ee", 
 			pic: "images/cappucino.jpg", 
 			desc: `Savor the perfect harmony of bold espresso, velvety steamed milk, and a luscious layer of frothy foam with our expertly crafted Cappuccino. This beloved classic strikes the ideal balance between rich flavor and creamy texture, creating a coffee experience that’s smooth, indulgent, and satisfying. Whether you enjoy it as is or enhanced with a touch of cinnamon, cocoa, or your favorite syrup, our Cappuccino is a cozy, comforting delight in every cup.`
 
@@ -93,7 +93,7 @@ switch(myDay){
 			name: "Flat White", 
 			day: "Wednesday",
 			alt: "A pic of a Flat White Coffee", 
-			color: "pink", 
+			color: "#dcd5cc", 
 			pic: "images/flat-white.jpg", 
 			desc: `Discover the understated elegance of a Flat White, where bold espresso meets silky steamed milk in perfect harmony. With its rich, velvety microfoam and robust coffee flavor, this drink offers a smooth, balanced experience that highlights the essence of the beans. Simple yet sophisticated, the Flat White is ideal for those who appreciate a pure and refined coffee moment. Crafted with care and inspired by the mountains, it’s a cup of warmth and perfection in every sip.`
 
@@ -107,7 +107,7 @@ switch(myDay){
 			name: "Caramel Latte", 
 			day: "Thursday",
 			alt: "A pic of a Caramel Latte", 
-			color: "#d3a54f", 
+			color: "#d0c7bb", 
 			pic: "images/caramel-latte.jpg", 
 			desc: `Treat yourself to the irresistible charm of a Caramel Latte, where bold espresso meets creamy steamed milk and a luscious swirl of golden caramel. Topped with a velvety layer of foam and a drizzle of caramel sauce, this decadent drink is the perfect blend of sweetness and comfort. Whether you’re starting your day or savoring an afternoon pick-me-up, our Caramel Latte is like a warm hug inspired by the heart of the mountains.`
 
@@ -122,7 +122,7 @@ switch(myDay){
 			name: "Mocha", 
 			day: "Friday",
 			alt: "A pic of a Mocha", 
-			color: "#9c917a", 
+			color: "#c5b9aa", 
 			pic: "images/mocha.jpg", 
 			desc: `Elevate your coffee experience with our Mocha, perfect union of bold espresso, velvety steamed milk, and indulgent chocolate. Topped with a swirl of whipped cream and a dusting of cocoa, this decadent drink is a treat for coffee and chocolate lovers alike. Whether you’re craving a cozy morning boost or a sweet afternoon indulgence, our Mocha offers the warmth and richness of the mountains in every sip.`
 
@@ -136,7 +136,7 @@ switch(myDay){
 			name: "Pumpkin Spice", 
 			day: "Monday",
 			alt: "A pic of a Pumpkin Spice Latte", 
-			color: "orange", 
+			color: "#a58e71", 
 			pic: "images/pumpkin-spice.jpg", 
 			desc: `Embrace the flavors of the season with our Pumpkin Spice Latte, a cozy blend of bold espresso, creamy steamed milk, and the perfect balance of pumpkin, cinnamon, nutmeg, and clove. Topped with a swirl of whipped cream and a sprinkle of autumn spices, this beloved classic captures the warmth and comfort of fall. Whether you're savoring a crisp morning or a chilly evening, our Pumpkin Spice Latte is your ultimate mountain-inspired autumn treat.`
 
@@ -151,7 +151,7 @@ switch(myDay){
 console.log(coffee);
 
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
-//document.querySelector("html").style.backgroundColor = coffee.color;
+document.querySelector("body").style.backgroundColor = coffee.color;
 
 function coffeeTemplate(coffee){
 	let myReturn = `<img src="${coffee.pic}" alt="${coffee.alt}" id="coffee" />
