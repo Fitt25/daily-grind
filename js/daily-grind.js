@@ -46,12 +46,12 @@ switch(myDay){
 		today = "Sunday";
 
 		coffee = {  
-			name: "Frappuccino", 
+			name: "Pumpkin Spice", 
 			day: "Sunday",
-			alt: "A pic of a Frappuccino", 
-			color: "#ad9d88", 
-			pic: "images/frapuccino.jpg", 
-			desc: `Indulge in the ultimate coffee treat with our creamy, dreamy Frappuccino. Blended to perfection, this icy delight combines rich espresso, velvety milk, and your choice of decadent flavors, all crowned with a swirl of whipped cream and a drizzle of pure bliss. Whether you're craving classic mocha, caramel's golden sweetness, or a seasonal twist, our Frappuccino is the perfect pick-me-up for any time of day. Cool, refreshing, and irresistibly indulgent—it’s more than just coffee; it’s an experience.`
+			alt: "A pic of a Pumpkin Spice Latte", 
+			color: "#a58e71", 
+			pic: "images/pumpkin-spice.jpg", 
+			desc: `Embrace the flavors of the season with our Pumpkin Spice Latte, a cozy blend of bold espresso, creamy steamed milk, and the perfect balance of pumpkin, cinnamon, nutmeg, and clove. Topped with a swirl of whipped cream and a sprinkle of autumn spices, this beloved classic captures the warmth and comfort of fall. Whether you're savoring a crisp morning or a chilly evening, our Pumpkin Spice Latte is your ultimate mountain-inspired autumn treat.`
 
 		};
 		
@@ -133,14 +133,15 @@ switch(myDay){
 		today = "Saturday";
 
 		coffee = {  
-			name: "Pumpkin Spice", 
-			day: "Monday",
-			alt: "A pic of a Pumpkin Spice Latte", 
-			color: "#a58e71", 
-			pic: "images/pumpkin-spice.jpg", 
-			desc: `Embrace the flavors of the season with our Pumpkin Spice Latte, a cozy blend of bold espresso, creamy steamed milk, and the perfect balance of pumpkin, cinnamon, nutmeg, and clove. Topped with a swirl of whipped cream and a sprinkle of autumn spices, this beloved classic captures the warmth and comfort of fall. Whether you're savoring a crisp morning or a chilly evening, our Pumpkin Spice Latte is your ultimate mountain-inspired autumn treat.`
+			name: "Frappuccino", 
+			day: "Saturday",
+			alt: "A pic of a Frappuccino", 
+			color: "#ad9d88", 
+			pic: "images/frapuccino.jpg", 
+			desc: `Indulge in the ultimate coffee treat with our creamy, dreamy Frappuccino. Blended to perfection, this icy delight combines rich espresso, velvety milk, and your choice of decadent flavors, all crowned with a swirl of whipped cream and a drizzle of pure bliss. Whether you're craving classic mocha, caramel's golden sweetness, or a seasonal twist, our Frappuccino is the perfect pick-me-up for any time of day. Cool, refreshing, and irresistibly indulgent—it’s more than just coffee; it’s an experience.`
 
 		};
+		
 	break;
 
 	default:
