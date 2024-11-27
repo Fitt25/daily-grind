@@ -29,7 +29,7 @@ let coffee = "";
 const queryString = window.location.search;
     
 //output to console    
-console.log(queryString);
+//console.log(queryString);
     
 //separate query string parameters
 const urlParams = new URLSearchParams(queryString);
@@ -147,9 +147,6 @@ switch(myDay){
 	default:
 		today = "Something went wrong";
 }
-
-//alert(today);
-console.log(coffee);
 
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
 document.querySelector("body").style.backgroundColor = coffee.color;
