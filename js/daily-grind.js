@@ -46,12 +46,12 @@ switch(myDay){
 		today = "Sunday";
 
 		coffee = {  
-			name: "Frapuccino", 
+			name: "Frappuccino", 
 			day: "Sunday",
-			alt: "A pic of a Frapuccino", 
+			alt: "A pic of a Frappuccino", 
 			color: "beige", 
-			pic: "images/frappaccino.jpg", 
-			desc: `Cold & Sweet`
+			pic: "images/frapuccino.jpg", 
+			desc: `Indulge in the ultimate coffee treat with our creamy, dreamy Frappuccino. Blended to perfection, this icy delight combines rich espresso, velvety milk, and your choice of decadent flavors, all crowned with a swirl of whipped cream and a drizzle of pure bliss. Whether you're craving classic mocha, caramel's golden sweetness, or a seasonal twist, our Frappuccino is the perfect pick-me-up for any time of day. Cool, refreshing, and irresistibly indulgent—it’s more than just coffee; it’s an experience.`
 
 		};
 		
@@ -75,7 +75,7 @@ switch(myDay){
 		today = "Tuesday";
 
 		coffee = {  
-			name: "Drip Coffee", 
+			name: "Cappucino", 
 			day: "Tuesday",
 			alt: "A pic of Drip coffee", 
 			color: "#5d473a", 
@@ -90,7 +90,7 @@ switch(myDay){
 
 
 		coffee = {  
-			name: "Bubble Tea", 
+			name: "Flat White", 
 			day: "Wednesday",
 			alt: "A pic of a Bubble Tea", 
 			color: "pink", 
@@ -104,7 +104,7 @@ switch(myDay){
 		today = "Thursday";
 
 		coffee = {  
-			name: "Caramel-latte", 
+			name: "Caramel Latte", 
 			day: "Thursday",
 			alt: "A pic of a Caramel Latte", 
 			color: "#d3a54f", 
@@ -136,7 +136,7 @@ switch(myDay){
 			name: "Pumpkin Spice", 
 			day: "Monday",
 			alt: "A pic of a Pumpkin Spice Latte", 
-			color: "orangebrown", 
+			color: "orange", 
 			pic: "images/pumpkin-spice-latte.jpg", 
 			desc: `One of our best sellers`
 
@@ -151,11 +151,13 @@ switch(myDay){
 console.log(coffee);
 
 document.getElementById("coffee-cup").innerHTML = coffeeTemplate(coffee);
-document.querySelector("html").style.backgroundColor = coffee.color;
+//document.querySelector("html").style.backgroundColor = coffee.color;
 
 function coffeeTemplate(coffee){
 	let myReturn = `<img src="${coffee.pic}" alt="${coffee.alt}" id="coffee" />
-	<strong class="feature">${coffee.day}'s Coffee Special:</strong> ${coffee.day}'s daily coffee special is <strong class="feature">${coffee.name}</strong>, ${coffee.desc}</p>`; 
+	<h3 class="feature"><strong>${coffee.day}'s Special:</strong> 
+	<strong>${coffee.name}.</strong><h3/>
+	<p>${coffee.desc}</p>`; 
 
 	return myReturn;
 
